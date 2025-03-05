@@ -42,7 +42,7 @@ a {
 
 @font-face {
     font-family: "Raleway";
-    src: url("/assets/fonts/Raleway-Medium.woff2") format("woff2");
+    src: url("./assets/fonts/Raleway-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -50,7 +50,7 @@ a {
 
 @font-face {
     font-family: "Raleway-bold";
-    src: url("/assets/fonts/Raleway-Bold.woff2") format("woff2");
+    src: url("./assets/fonts/Raleway-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -290,7 +290,7 @@ body {
 
 /* PROMO */
 .promo {
-    background: url('/assets/img/promo-image.jpg') no-repeat center center/cover;
+    background: url('../assets/img/promo-image.jpg') no-repeat center center/cover;
     color: var(--color-light);
     height: 574px;
     margin-bottom: 70px;
@@ -467,7 +467,7 @@ body {
     }
 
     .promo {
-        background: url('/assets/img/promo-image.jpg') no-repeat center center/cover;
+        background: url('../assets/img/promo-image.jpg') no-repeat center center/cover;
         color: var(--color-light);
         height: 502px;
     }
