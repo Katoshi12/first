@@ -1,50 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ink. House</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
 <body>
-   <main>
-       <section>
-           <div>
-               <h1>Стейк средней прожарки с картофелем</h1>
-               <img
-                src="https://cdn-img.georgeforemangrills.com/manager/georgeforemangrills_com/aw18-recipes/large_Lamb-Steak-Grill-Tomotoes.jpg"
-                alt="Стейк средней прожарки с картофелем"
-                width="500" height="400"
-                >
-                <div>
-                   <h2>Для данного блюда нам понадобится:</h2>
-                   <ul>
-                       <li>Стейковое мясо(вырезка) по 250-300г.</li>
-                       <li>10-20 клубней молодого картофеля</li>
-                       <li>2 сливовидных помидора</li>
-                       <li>1 ст.л. оливкового масла</li>
-                       <li>Соль и перец по вкусу</li>
-                   </ul>
+    <header class="header">
+        <div class="header-content container">
+            <a href="#" class="header-logo">
+              <img
+                class="header-logo-image"
+                src="/assets/img/icons/logo.svg"
+                alt="Ink. House Logo"
+                width="35"
+                height="35"
+                loading="lazy"
+              >
+              <span class="header-logo-text">
+                Ink. House
+              </span>
+            </a>
+            <hr class="header-underline">
+            <nav class="header-navigation">
+              <ul class="header-navigation-list">
+                <li class="header-navigation-item">
+                  <a href="#" class="header-navigation-link active">
+                    Репродукции
+                  </a>
+                </li>
+                <li class="header-navigation-item">
+                  <a href="#" class="header-navigation-link">
+                    Новинки
+                  </a>
+                </li>
+                <li class="header-navigation-item">
+                  <a href="#" class="header-navigation-link">
+                    О нас
+                  </a>
+                </li>
+                <li class="header-navigation-item">
+                  <a href="#" class="header-navigation-link basket-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_3_994)">
+                      <path d="M9.25001 21.1667C9.75627 21.1667 10.1667 20.7563 10.1667 20.25C10.1667 19.7438 9.75627 19.3334 9.25001 19.3334C8.74375 19.3334 8.33334 19.7438 8.33334 20.25C8.33334 20.7563 8.74375 21.1667 9.25001 21.1667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M19.3333 21.1667C19.8396 21.1667 20.25 20.7563 20.25 20.25C20.25 19.7438 19.8396 19.3334 19.3333 19.3334C18.8271 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8271 21.1667 19.3333 21.1667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M1.91666 1.91663H5.58332L8.03999 14.1908C8.12381 14.6128 8.35341 14.9919 8.68857 15.2617C9.02374 15.5315 9.44313 15.6749 9.87332 15.6666H18.7833C19.2135 15.6749 19.6329 15.5315 19.9681 15.2617C20.3032 14.9919 20.5328 14.6128 20.6167 14.1908L22.0833 6.49996H6.49999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_3_994">
+                      <rect width="22" height="22" fill="white" transform="translate(1 1)"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+        <div>
+          <div class="header-navigation--mobile container">
+              <div class="hamburger-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </div>
+            <img src="./assets/img/icons/basket.svg" alt="basket" class="header-basket--mobile">  
+          </div>
+        </div>
+    </header>
+    <main class="main">
+      
+      <section class="hero container">
+        <img
+            class="hero__image"
+            src="./assets/img/hero.png"
+            alt=""
+            width="540" height="621" loading="lazy"
+          >
+          <div class="hero-description">
+            <h2 class="hero-description__title">
+              Реплики картин от <span>Ink. House</span>
+            </h2>
 
-                   <h3>Способ приготовления:</h3>
-                   <ol>
-                       <li>Отварите картофель в подсоленной воде до полуготовности.
-                           Снимите с огня, слейте воду и промойте холодной водой до полного остывания.
-                           Затем разрежьте клубни пополам и отставьте в сторону.
-                       </li>
-                       <li>Помидоры разрежьте пополам вдоль, при необходимости вырежьте черенок.</li>
-                       <li>Разогрейте сковородку до средней степени</li>
-                       <li>Смажьте картофель, помидоры и мясо оливковым маслом, посолите и поперчите.
-                           Вставьте термометр в центр стейка.
-                       </li>
-                       <li>Жарьте мясо по системе 2 минуты с одной стороны и так же с другой.
-                           Когда мясо будет по середине будет мягкой вытаскивайте со сковородки и помещайте его в фольгу.
-                           В фольге должна быть 5-10 минут
-                       </li>
-                       <li>Вытаскивайте картофель и красиво наложите на тарелку.</li>
-                   </ol>
+            <p class="hero-description__subtitle text-lg">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+          
+            <a href="#catalog" class="button">
+              Продукция
+            </a>
+          </div>
+      </section>
+      
+      <section class="catalog container">
+
+        <header class="catalog__header">
+
+          <h2 class="section-title">
+            Репродукции
+          </h2>
+
+          <div class="header-tab__buttons horizontal-scroll">
+            <button class="header-tab__button active">Франция</button>
+            <button class="header-tab__button">Германия</button>
+            <button class="header-tab__button">Англия</button>
+          </div>
+        </header>
+
+        <div class="catalog__body">
+          <article class="card">
+            <figure>
+              <img src="./assets/img/image-1.jpg" alt="image-1" class="card__image">
+              <figcaption class="card__author text-lg">Марсель Руссо</figcaption>
+            </figure>
+
+            <h3 class="card__title">
+              Охота Амура
+            </h3>
+
+            <p class="card__subtitle">
+              Холст, масло (50х80) 
+            </p>
+
+            <p class="card__price">
+              14 500 руб
+            </p>
+
+            <button class="button">В корзину</button>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="./assets/img/image-2.jpg" alt="image-2" class="card__image">
+              <figcaption class="card__author text-lg">Анри Селин</figcaption>
+            </figure>
+
+            <h3 class="card__title">
+              Дама с собачкой
+            </h3>
+
+            <p class="card__subtitle">
+              Акрил, бумага (50х80)
+            </p>
+
+            <p class="card__price">
+              16 500 руб
+            </p>
+
+            <button class="button">В корзину</button>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="./assets/img/image-3.jpg" alt="image-3" class="card__image">
+              <figcaption class="card__author text-lg">Франсуа Дюпон</figcaption>
+            </figure>
+
+            <h3 class="card__title">
+              Процедура
+            </h3>
+
+            <p class="card__subtitle">
+              Цветная литография (40х60) 
+            </p>
+
+            <p class="card__price">
+              20 000 руб
+            </p>
+
+            <button class="button">В корзину</button>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="./assets/img/image-4.jpg" alt="image-4" class="card__image">
+              <figcaption class="card__author text-lg">Луи Детуш</figcaption>
+            </figure>
+
+            <h3 class="card__title">
+              Роза
+            </h3>
+
+            <p class="card__subtitle">
+              Бумага, акрил (50х80) 
+            </p>
+
+            <p class="card__price">
+              12 000 руб
+            </p>
+
+            <button class="button">В корзину</button>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="./assets/img/image-5.jpg" alt="image-5" class="card__image">
+              <figcaption class="card__author text-lg">Франсуа Дюпон</figcaption>
+            </figure>
+
+            <h3 class="card__title">
+              Птичья трапеза
+            </h3>
+
+            <p class="card__subtitle">
+              Цветная литография (40х60) 
+            </p>
+
+            <p class="card__price">
+              22 500 руб
+            </p>
+
+            <button class="button">В корзину</button>
+          </article>
+
+          <article class="card">
+            <figure>
+              <img src="./assets/img/image-1.jpg" alt="image-1" class="card__image">
+              <figcaption class="card__author text-lg">Пьер Моранж</figcaption>
+            </figure>
+
+            <h3 class="card__title">
+              Пейзаж с рыбой
+            </h3>
+
+            <p class="card__subtitle">
+              Цветная литография (40х60)
+            </p>
+
+            <p class="card__price">
+              20 000 руб
+            </p>
+
+            <button class="button">В корзину</button>
+          </article>
+        </div>
+      </section>
+      
+      <section class="promo">
+        <div class="promo__content container">
+          <div class="promo__left">
+            <div class="promo__title">
+              <img src="/assets/img/icons/promo-star.svg" alt="star" class="promo__image">
+              <h2 class="promo__text section-title">Новая коллекция французских авторов</h2>
+            </div>
+              <p class="promo__subtitle text-lg">
+                  Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, 
+                  которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+                  <br>
+                  <br>
+                  Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность
+                  направлений прогрессивного развития.
+              </p>
+              <button href="#" class="button promo__button--yellow">Ознакомиться</button>
+          </div>
+          <div class="promo-right"></div>
+        </div>
+      </section>
+
+      <section class="our-team container">
+        <div class="our-team__content">
+          <img
+            class="our-team__image"
+            src="/assets/img/our-team.png"
+            alt=""
+            width="445" height="440" loading="lazy"
+          >
+
+          <div class="our-team__info">
+            <h2 class="our-team__title section-title">
+              Наша команда
+            </h2>
+
+            <p class="our-team__text text-lg">
+              Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет
+              оценить значение экспериментов, поражающих по своей масштабности и грандиозности.
+              Мы вынуждены отталкиваться от того, что консультация с широким активом.
+            </p>
+
+            <div class="our-team__worker">
+              <img src="/assets/img/team/1.png" alt="1">
+              <img src="/assets/img/team/2.png" alt="2">
+              <img src="/assets/img/team/3.png" alt="3">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+    
+        <div class="footer__left">
+          <a href="#" class="footer__logo">
+            <img
+              class="footer__logo-image"
+              src="/assets/img/icons/logo.svg"
+              alt="Ink. House Logo"
+              width="35"
+              height="35"
+            >
+            <span class="header-logo-text">Ink. House</span>
+          </a>
+    
+          <div class="footer__phone">
+            <a href="tel:+7999555454">+7 (999) 55-54-54</a>
+            <span class="text-lg">Мастерская</span>
+          </div>
+        </div>
+    
+        <div class="footer__right">
+    
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__item-mobile">
+                <div class="footer__phone-mobile">
+                  <a href="tel:+7999555454" class="footer__phone-text">+7 (999) 55-54-54</a>
+                  <span class="text-lg">Мастерская</span>
                 </div>
-           </div>
-       </section>
-   </main>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__header-text">Репродукции</a>
+                <ul class="footer__submenu">
+                  <li><a href="#" class="footer__link text-lg">Франция</a></li>
+                  <li><a href="#" class="footer__link text-lg">Германия</a></li>
+                  <li><a href="#" class="footer__link text-lg">Англия</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__header-text">Новинки</a>
+                <ul class="footer__submenu">
+                  <li><a href="#" class="footer__link text-lg">2021</a></li>
+                  <li><a href="#" class="footer__link text-lg">2020</a></li>
+                </ul>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__header-text">О нас</a>
+                <ul class="footer__submenu">
+                  <li><a href="#" class="footer__link text-lg">Художники</a></li>
+                  <li><a href="#" class="footer__link text-lg">Менеджеры</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <hr class="footer__border">
+          <div class="footer__social">
+            <div class="footer__icons">
+              <a href="#" target="_blank">
+                <img src="/assets/img/icons/social/facebook.svg" alt="Facebook" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="/assets/img/icons/social/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="#" target="_blank">
+                <img src="/assets/img/icons/social/youtube.svg" alt="YouTube" />
+              </a>
+            </div>
+            <div class="footer__bottom">
+              <span class="text-small">Ink. House ® All rights reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
